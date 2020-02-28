@@ -178,13 +178,12 @@
 <span class="k">def</span> <span class="nf">something_func</span><span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="n">user_result</span><span class="p">,</span> <span class="n">permission_result</span><span class="p">):</span>
 
     <span class="k">if</span> <span class="n">user_result</span> <span class="o">==</span> <span class="n">STATUS_SUCCESS</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">permission_result</span> <span class="o">==</span> <span class="n">STATUS_SUCCESS</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">permission_result</span> <span class="o">!=</span> <span class="n">STATUS_SUCCESS</span><span class="p">:</span>
             <span class="n">reply</span><span class="o">.</span><span class="n">write_errors</span><span class="p">(</span><span class="s2">&quot;error reading permissions&quot;</span><span class="p">)</span>
             <span class="n">reply</span><span class="o">.</span><span class="n">done</span><span class="p">()</span>
             <span class="k">return</span>
         <span class="n">reply</span><span class="o">.</span><span class="n">write_errors</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-
         <span class="n">reply</span><span class="o">.</span><span class="n">write_errors</span><span class="p">(</span><span class="n">user_result</span><span class="p">)</span>
 
     <span class="n">reply</span><span class="o">.</span><span class="n">done</span><span class="p">()</span>
@@ -200,7 +199,7 @@
     <span class="k">if</span> <span class="n">user_result</span> <span class="o">!=</span> <span class="n">STATUS_SUCCESS</span><span class="p">:</span>
         <span class="n">reply</span><span class="o">.</span><span class="n">write_errors</span><span class="p">(</span><span class="n">user_result</span><span class="p">)</span>
         <span class="n">reply</span><span class="o">.</span><span class="n">done</span><span class="p">()</span>
-        <span class="k">return</span>
+        <span class="k">return</span> <span class="c1"># &lt;- 必要なくなったら処理を抜ける</span>
 
     <span class="k">if</span> <span class="n">permission_result</span> <span class="o">!=</span> <span class="n">STATUS_SUCCESS</span><span class="p">:</span>
         <span class="n">reply</span><span class="o">.</span><span class="n">write_errors</span><span class="p">(</span><span class="s2">&quot;error reading permissions&quot;</span><span class="p">)</span>
@@ -386,7 +385,7 @@ for var, _ in get_hoge_list():
 </div>
 <div class="section" id="id27">
 <h2>レビュー観点<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
-<p>レビューする/される時に意識してもらいこと</p>
+<p>レビューする/される時に意識してもらいたこと</p>
 <ul class="simple">
 <li><p>レビューの往復を減らす工夫をしたい</p></li>
 <li><p>完璧は目指させない方が良さそう -&gt; 要件を満たすものをまずは作れるようになることが大事</p></li>
@@ -398,8 +397,7 @@ for var, _ in get_hoge_list():
 </ul>
 </div>
 <div class="section" id="id28">
-<h2>レビュー観点<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
-<p>対応のレベルのイメージ</p>
+<h2>対応のレベルのイメージ<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
 <p>MUST</p>
 <ul class="simple">
 <li><p>要件を満たしていない</p></li>
