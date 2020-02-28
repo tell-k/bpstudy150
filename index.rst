@@ -311,9 +311,9 @@ lint と code formatter
 標準のライブラリや良く見る処理の実装
 =========================================
 
-* Python は `collections <https://docs.python.org/ja/3/library/collections.html>` や `itertools <https://docs.python.org/ja/3/library/itertools.html>` などの便利なライブラリが最初から入ってます。
+* Python は `collections <https://docs.python.org/ja/3/library/collections.html>`_ や `itertools <https://docs.python.org/ja/3/library/itertools.html>`_ などの便利なライブラリが最初から入ってます。
 * それらを使えばちょっと複雑な処理もスッキリかけたります。
-* 例えば辞書を初期化する時に良く紹介するのは `collections.defaultdict` です。
+* 例えば辞書を初期化する時に良く紹介するのは ``collections.defaultdict`` です。
 
 .. code-block:: python
 
