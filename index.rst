@@ -160,13 +160,12 @@ Python Professional Programing
  def something_func(reply, user_result, permission_result):
 
      if user_result == STATUS_SUCCESS:
-         if permission_result == STATUS_SUCCESS:
+         if permission_result != STATUS_SUCCESS:
              reply.write_errors("error reading permissions")
              reply.done()
              return
          reply.write_errors("")
      else:
-
          reply.write_errors(user_result)
 
      reply.done()
@@ -183,7 +182,7 @@ Python Professional Programing
       if user_result != STATUS_SUCCESS:
           reply.write_errors(user_result)
           reply.done()
-          return
+          return # <- 必要なくなったら処理を抜ける
   
       if permission_result != STATUS_SUCCESS:
           reply.write_errors("error reading permissions")
