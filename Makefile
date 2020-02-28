@@ -196,7 +196,7 @@ up: clean html
 
 deploy:
 	make clean html
-	git co gh-pages
+	git co -b gh-pages
 	cp -pr _build/html/* ./
 	git add .
 	git commit -m 'update slides'

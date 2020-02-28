@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rookieに良くする話</title>
+    <meta name="description" content="BPStudy #150 の発表資料です。" >
+    <link rel="canonical" href="https://tell-k.github.io/bpstudy150" >
+    <script>
+      var notesEnabled =false;
+      var sections = [];
+      var titleNotes = [];
+    </script>
+    <meta charset='utf-8'>
+
+    <meta property="og:title" content="Rookieに良くする話">
+    <meta property="og:description" content="BPStudy #150 の発表資料です。">
+    <meta property="og:image" content="https://tell-k.github.io/bpstudy150/_static/img/ogp.png">
+    <meta property="og:url" content="https://tell-k.github.io/bpstudy150">
+    <meta property="og:site_name" content="github">
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="https://github.com/tell-k">
+
+    <meta name="twitter:title" content="Rookieに良くする話">
+    <meta name="twitter:description" content="BPStudy #150 の発表資料です。">
+    <meta name="twitter:image" content="https://tell-k.github.io/bpstudy150/_static/img/ogp.png">
+    <meta name="twitter:card" content="summary_large_image"">
+    <meta name="twitter:site" content="@github">
+    <meta name="twitter:creator" content="@tell_k">
+
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/notes.css" type="text/css" />
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+    <script>
+    </script>
+  </head>
+  <body style='display: none'>
+    
+  <div class="section" id="rookie">
+<h1>Rookieに良くする話<a class="headerlink" href="#rookie" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">tell-k</div>
+<div class="line">BPStudy #150 (2020.02.18)</div>
+</div>
+<div class="section" id="id1">
+<h2>おまえ誰よ？<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<img alt="https://pbs.twimg.com/profile_images/1045138776224231425/3GD8eWeG_200x200.jpg" src="https://pbs.twimg.com/profile_images/1045138776224231425/3GD8eWeG_200x200.jpg" />
+<ul class="simple">
+<li><p>tell-k</p></li>
+<li><p>BePROUD.inc</p></li>
+<li><p>情弱プログラマー</p></li>
+<li><p><a class="reference external" href="https://twitter.com/tell_k">https://twitter.com/tell_k</a></p></li>
+<li><p><a class="reference external" href="https://tell-k.github.io/bpstudy150/">https://tell-k.github.io/bpstudy150/</a></p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>目的/動機<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>発表者はRookiesという社内の取り組みで、新しく入社したエンジニアの方のコードレビューをすることが比較的多く、さまざまなバックグラウンドを持つ方々と接してきました。</p></li>
+<li><p>それらのコードレビューで実践して得た知見や共通のハマりポイントみたいなのをまとめて発表しようと思った次第。</p></li>
+<li><p>また、そこで得た知見は『自走プログラマー』にもいくつか執筆しました。</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>自走プログラマー<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="https://images-na.ssl-images-amazon.com/images/I/410FSLNj5lL._SX396_BO1,204,203,200_.jpg"><img alt="https://images-na.ssl-images-amazon.com/images/I/410FSLNj5lL._SX396_BO1,204,203,200_.jpg" src="https://images-na.ssl-images-amazon.com/images/I/410FSLNj5lL._SX396_BO1,204,203,200_.jpg" style="width: 40%;" /></a>
+</div>
+<div class="section" id="id4">
+<h2>対象者<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>プログラマーになってみたい人</p></li>
+<li><p>実際プログラマーとして働く時に、どんなコードレビューされるのか興味がある人。</p></li>
+<li><p>自走プログラマーを読んでみる一歩手前がぐらいの人</p></li>
+</ul>
+</div>
+<div class="section" id="rookies">
+<h2>Rookiesとは？<a class="headerlink" href="#rookies" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>経験が浅い人向けの、弊社の新人研修のようなものです。</p></li>
+<li><p>弊社では、素養がある人であれば経験が乏しくても採用するケースがあります。</p></li>
+<li><p>曰く、人材のパイを取り合うのではなく、パイを創りたいからだそうです(ドヤァ</p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>経験が浅い人とは？<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>学生</p></li>
+<li><p>Pythonでの仕事は初めての人</p></li>
+<li><p>大学講師</p></li>
+<li><p>営業</p></li>
+<li><p>広報</p></li>
+<li><p>銀行事務職</p></li>
+<li><p>ガールズバー店長</p></li>
+<li><p>オーストラリアで無職</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>Rookiesとは？<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>BPは受託がメインで、経験が浅い人は、Slackのrookies部屋に入れられて、開発に慣れるようにしてもらっています。</p></li>
+<li><p>2015年から初めて合計23人くらい受けています。</p></li>
+<li><p>実案件に入って、早く成長してもらうため、必要最低限のスキルや知識を獲得してもらう狙いです。</p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h2>早く成長するためには？<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="_images/good_elements.png"><img alt="_images/good_elements.png" src="_images/good_elements.png" style="width: 80%;" /></a>
+</div>
+<div class="section" id="id8">
+<h2>最良にフォーカス<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="_images/sairyo.png"><img alt="_images/sairyo.png" src="_images/sairyo.png" style="width: 80%;" /></a>
+</div>
+<div class="section" id="id9">
+<h2>学習することを絞る<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="_images/gakusyu.png"><img alt="_images/gakusyu.png" src="_images/gakusyu.png" style="width: 80%;" /></a>
+</div>
+<div class="section" id="id10">
+<h2>1人前を目指す<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>チケット/バージョン管理</p></li>
+<li><p>開発の作業見積もりができる</p></li>
+<li><p>安定した品質のコードをスピーディに書くことができる</p></li>
+<li><p>コードのレビューで、ほぼ指摘なしでパスできる</p></li>
+<li><p>実業務のプロジェクトにアサインされて一人で簡単な機能の設計･開発・テストをそこそこのスピードで開発し、 レビューをほぼパスする</p></li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h2>どんな感じのことやるの？<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>GitHub上にある課題リポジトリをクローンして開発してもらう</p></li>
+<li><p>簡単なCLIツールからDjangoを使ったWebアプリの開発まである</p></li>
+<li><p>2週間 〜 1ヶ月くらいの期間で作業する</p></li>
+<li><p>チケットで依頼 -&gt; 開発 -&gt; コードレビュー -&gt; 修正 -&gt; マージ までを慣れてもらう</p></li>
+<li><p>他の人のコードを見てもOK</p></li>
+<li><p>特定のトピックに関してはPyQ(社員)を利用して自習してもらう</p></li>
+<li><p>BP著 の Python Professional Programming でチーム開発に必要になりそうな箇所を読書会</p>
+<ul>
+<li><p>Chapter5 課題管理とレビュー</p></li>
+<li><p>Chapter6 Git/GitHub によるソースコード管理</p></li>
+</ul>
+</li>
+<li><p>有志でリモートで読書会を開いて参加してもらったりする</p></li>
+</ul>
+</div>
+<div class="section" id="python-professional-programing">
+<h2>Python Professional Programing<a class="headerlink" href="#python-professional-programing" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="https://images-fe.ssl-images-amazon.com/images/I/419ZPrd-cVL.jpg"><img alt="https://images-fe.ssl-images-amazon.com/images/I/419ZPrd-cVL.jpg" src="https://images-fe.ssl-images-amazon.com/images/I/419ZPrd-cVL.jpg" style="width: 40%;" /></a>
+</div>
+<div class="section" id="id12">
+<h2>課題のリポジトリ<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<p>こんな感じのリポジトリを cloneするところからスタート</p>
+<a class="reference internal image-reference" href="_images/python_challenge.png"><img alt="_images/python_challenge.png" src="_images/python_challenge.png" style="width: 80%;" /></a>
+</div>
+<div class="section" id="id13">
+<h2>課題はどんなの？<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="_images/pychallenge001.png"><img alt="_images/pychallenge001.png" src="_images/pychallenge001.png" style="width: 80%;" /></a>
+</div>
+<div class="section" id="id14">
+<h2>レビューで良く指摘されるポイント<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id15">
+<h2>ガード節/早期リターン<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>関数の特殊なケース、失敗したケースは、関数の先頭ですぐにリターンしようという話。</p></li>
+<li><p>ネストが深いコードは理解しにくいので、ネストを浅く保ち可読性を良くするテクニック。</p></li>
+<li><p><a class="reference external" href="http://blog.livedoor.jp/lalha/archives/50472164.html">ガード節を用いた if-then-else 文の置き換え</a></p></li>
+<li><p>リファクタリングやリーダブルコード などで紹介されてる</p></li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h2>ガード節/早期リターン<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>どっからどこまで特殊なケースなのか正常なケースなのかわかりづらい</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bad ---</span>
+
+<span class="k">def</span> <span class="nf">something_func</span><span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="n">user_result</span><span class="p">,</span> <span class="n">permission_result</span><span class="p">):</span>
+
+    <span class="k">if</span> <span class="n">user_result</span> <span class="o">==</span> <span class="n">STATUS_SUCCESS</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">permission_result</span> <span class="o">==</span> <span class="n">STATUS_SUCCESS</span><span class="p">:</span>
+            <span class="n">reply</span><span class="o">.</span><span class="n">write_errors</span><span class="p">(</span><span class="s2">&quot;error reading permissions&quot;</span><span class="p">)</span>
+            <span class="n">reply</span><span class="o">.</span><span class="n">done</span><span class="p">()</span>
+            <span class="k">return</span>
+        <span class="n">reply</span><span class="o">.</span><span class="n">write_errors</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+
+        <span class="n">reply</span><span class="o">.</span><span class="n">write_errors</span><span class="p">(</span><span class="n">user_result</span><span class="p">)</span>
+
+    <span class="n">reply</span><span class="o">.</span><span class="n">done</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id17">
+<h2>ガード節/早期リターン<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bad ---</span>
+
+<span class="k">def</span> <span class="nf">something_func</span><span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="n">user_result</span><span class="p">,</span> <span class="n">permission_result</span><span class="p">):</span>
+
+    <span class="k">if</span> <span class="n">user_result</span> <span class="o">!=</span> <span class="n">STATUS_SUCCESS</span><span class="p">:</span>
+        <span class="n">reply</span><span class="o">.</span><span class="n">write_errors</span><span class="p">(</span><span class="n">user_result</span><span class="p">)</span>
+        <span class="n">reply</span><span class="o">.</span><span class="n">done</span><span class="p">()</span>
+        <span class="k">return</span>
+
+    <span class="k">if</span> <span class="n">permission_result</span> <span class="o">!=</span> <span class="n">STATUS_SUCCESS</span><span class="p">:</span>
+        <span class="n">reply</span><span class="o">.</span><span class="n">write_errors</span><span class="p">(</span><span class="s2">&quot;error reading permissions&quot;</span><span class="p">)</span>
+        <span class="n">reply</span><span class="o">.</span><span class="n">done</span><span class="p">()</span>
+        <span class="k">return</span>
+
+    <span class="c1"># ここからが正常な処理</span>
+    <span class="n">reply</span><span class="o">.</span><span class="n">write_errors</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">reply</span><span class="o">.</span><span class="n">done</span><span class="p">()</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>知識としては知っていても、いざ課題をやったりすると、早期リターンを活用できてないというケースがある</p></li>
+</ul>
+</div>
+<div class="section" id="id18">
+<h2>処理効率の悪い探索<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>リスト操作などをする時にループを無駄に回してしまうようなケース</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">amount</span> <span class="ow">in</span> <span class="n">aggregates</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+
+    <span class="c1"># Bad ---</span>
+    <span class="n">bank_name</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">bank</span> <span class="ow">in</span> <span class="n">banks</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">bank_id</span>  <span class="o">==</span> <span class="n">bank</span><span class="o">.</span><span class="n">id</span><span class="p">:</span>
+            <span class="n">bank_name</span> <span class="o">=</span> <span class="n">bank</span><span class="o">.</span><span class="n">name</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{bank_name}</span><span class="s2"> への振込金額は </span><span class="si">{amount}</span><span class="s2">円です&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>最悪「aggregatesの全件数 * banksの全件数」のループが回ってしまう。</p></li>
+</ul>
+</div>
+<div class="section" id="id19">
+<h2>処理効率の悪い探索<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>メモリに乗るのであれば予め辞書にして、キー指定ですぐにデータが見つかるようにする</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 予めた探索しやすいようなデータを作っておく</span>
+<span class="n">bank_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">b</span><span class="o">.</span><span class="n">id</span><span class="p">:</span> <span class="n">b</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">banks</span><span class="p">}</span>
+
+<span class="k">for</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">amount</span> <span class="ow">in</span> <span class="n">aggregates</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+
+      <span class="c1"># Good</span>
+      <span class="n">bank_name</span> <span class="o">=</span> <span class="n">bank_dict</span><span class="p">[</span><span class="n">bank_id</span><span class="p">]</span><span class="o">.</span><span class="n">name</span>
+      <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{bank_name}</span><span class="s2"> への振込金額は </span><span class="si">{amount}</span><span class="s2">円です&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>逆に、不必要に辞書化してメモリを無駄に消費してしまうというケースもあります。</p></li>
+</ul>
+</div>
+<div class="section" id="id20">
+<h2>処理効率の悪い探索<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>もう必要ないのにループを継続してしまうケースもある。</p></li>
+<li><p>id に 紐づく bankは 一つだけ。</p></li>
+<li><p>なので見つかった後の for ループは無駄になってるケース。</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">bank</span> <span class="ow">in</span> <span class="n">banks</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">bank_id</span> <span class="o">==</span> <span class="n">bank</span><span class="o">.</span><span class="n">id</span><span class="p">:</span>
+        <span class="n">bank_name</span> <span class="o">=</span> <span class="n">bank</span><span class="o">.</span><span class="n">name</span>
+        <span class="k">break</span>  <span class="c1"># &lt;- ここで breakすればループはそこで止まる</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id21">
+<h2>境界値の扱い<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>日時による絞り込みなどの境界値扱いなども、指摘されすいものの一つ</p></li>
+<li><p>例えば 2020/01/01 0時 から 2020/01/02 いっぱいまでの絞り込みをしたい</p></li>
+<li><p>アバウトな要求に対して、期間の終わりを23時59分59秒としてしまうと漏れてしまうケースがある</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bad  ---</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="n">target</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># 2020/01/02 ではあるが絞り込みからは漏れてしまう</span>
+
+<span class="n">start</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">end</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">59</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">start</span> <span class="o">&lt;=</span> <span class="n">target</span> <span class="o">&lt;=</span> <span class="n">end</span><span class="p">)</span> <span class="c1"># =&gt; False</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Good  ---</span>
+<span class="n">start</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">end</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>  <span class="c1"># 確実に漏れが発生しない条件を指定する</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">start</span> <span class="o">&lt;=</span> <span class="n">target</span> <span class="o">&lt;</span> <span class="n">end</span><span class="p">)</span> <span class="c1"># =&gt; True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="lint-code-formatter">
+<h2>lint と code formatter<a class="headerlink" href="#lint-code-formatter" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>だいたいどの言語でも、推奨されるコーディングスタイルがあります。</p></li>
+<li><p>スタイルや規約に合わせて、コードをチェックするツールをlint(linter) と呼びます。</p></li>
+<li><p>一方スタイルや規約に合わせて、自動でコードを整形するツールを formatterと呼びます。 go の gofmtなどが有名。</p></li>
+<li><p>独学で学んだり、一人で開発したことがない人は、知ってても使ってないケースもあります。</p></li>
+<li><p>Pythonでいえば推奨されるコーディングスタイルとして PEP8</p></li>
+<li><p>code formatter は 最近だと black や autopep8、 yapf などがあります。</p></li>
+<li><p>必ずレビューを出す時は flake8 が通るようにしてもらっています。</p></li>
+<li><p>参考 <a class="reference external" href="https://speakerdeck.com/aodag/pycon-kyushu-2019-pythondefalsekai-fa-woxiao-lu-de-nijin-merutamefalseturushe-ding">Pythonでの開発を効率的に進めるためのツール設定</a></p></li>
+</ul>
+</div>
+<div class="section" id="id22">
+<h2>変数の命名規則<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>PEP8 では どういう変数名にすると良いか書かれています。</p></li>
+<li><p>読まないと見落としがちで、変な変数名をつけたり、意味が読み取れなかったします。</p></li>
+<li><p>PEP8 日本語訳(<a class="reference external" href="https://pep8-ja.readthedocs.io/ja/latest/#id25">https://pep8-ja.readthedocs.io/ja/latest/#id25</a>)</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>_single_leading_underscore ... 先頭にアンダースコア。
+                               クラスやモジュールの内部だけで使うことを意味する
+
+single_trailing_underscore_ ... 末尾にアンダースコア。
+                                Pythonのキーワードと被る時に利用する
+
+// PEP8 には書いてないが多値を返すような関数の場合
+// 使わない値は &quot;アンダースコアのみ&quot; の変数に格納したりします。
+
+for var, _ in get_hoge_list():
+    # ... varしかつかない処理
+</pre></div>
+</div>
+</div>
+<div class="section" id="id23">
+<h2>標準のライブラリや良く見る処理の実装<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Python は <cite>collections &lt;https://docs.python.org/ja/3/library/collections.html&gt;</cite> や <cite>itertools &lt;https://docs.python.org/ja/3/library/itertools.html&gt;</cite> などの便利なライブラリが最初から入ってます。</p></li>
+<li><p>それらを使えばちょっと複雑な処理もスッキリかけたります。</p></li>
+<li><p>例えば辞書を初期化する時に良く紹介するのは <cite>collections.defaultdict</cite> です。</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bad ---</span>
+
+<span class="n">summary</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">amount</span> <span class="ow">in</span> <span class="n">products</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">category</span> <span class="o">=</span> <span class="n">get_category_by_name</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+    <span class="c1"># いきなり金額を加算代入できないので、最初はキーを初期化する</span>
+    <span class="k">if</span> <span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">summary</span><span class="p">:</span>
+       <span class="n">summary</span><span class="p">[</span><span class="n">category</span><span class="p">]</span> <span class="o">=</span> <span class="n">amount</span>
+    <span class="k">else</span><span class="p">:</span>
+       <span class="n">summary</span><span class="p">[</span><span class="n">category</span><span class="p">]</span> <span class="o">+=</span> <span class="n">amount</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id24">
+<h2>標準のライブラリや良く見る処理の実装<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Good ---</span>
+
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+
+<span class="n">summary</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">amount</span> <span class="ow">in</span> <span class="n">products</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">category</span> <span class="o">=</span> <span class="n">get_category_by_name</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+    <span class="c1"># 存在しないキーの場合は int(=0)で初期化される</span>
+    <span class="n">summary</span><span class="p">[</span><span class="n">category</span><span class="p">]</span> <span class="o">+=</span> <span class="n">amount</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id25">
+<h2>その他<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>エラーを握り潰さない</p></li>
+<li><p>ファイルパスを適切に組み立てる</p></li>
+<li><p>特定の数値や文字列などは定数化する</p></li>
+<li><p>デザインパターンの話(Pythonでのシングルトン)</p></li>
+<li><p>内包表記、高階関数(map, filter, reduce)</p></li>
+<li><p>flattenなどの頻出するイディオム類</p></li>
+<li><p>Python3の正規表現の <cite>d</cite> のメタ文字は全角にもマッチする罠(re.ASCIIフラグが必要)</p></li>
+</ul>
+</div>
+<div class="section" id="id26">
+<h2>レビュー観点<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>レビューのやりとりは慣れないと時間がかかったり、フラストレーションがたまります。</p></li>
+<li><p>レビュワー/レビューイー に 共通のレビュー観点を周知することで、ある程度効率良くレビューが回りました。</p></li>
+</ul>
+</div>
+<div class="section" id="id27">
+<h2>レビュー観点<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<p>レビューする/される時に意識してもらいこと</p>
+<ul class="simple">
+<li><p>レビューの往復を減らす工夫をしたい</p></li>
+<li><p>完璧は目指させない方が良さそう -&gt; 要件を満たすものをまずは作れるようになることが大事</p></li>
+<li><p>Q&amp;Aはチャットでやる -&gt; PRの中でQだけ書いて終わりにしない</p></li>
+<li><p>対応のレベルを MUST/SHOULD/MAY がわかるようにする</p></li>
+<li><p>良い悪いを端的伝える。なぜそうなるのか伝える</p></li>
+<li><p>考えてくださいではなく、こうしてくださいを伝える</p></li>
+<li><p>その上で、参考になりそうな一次ソース、参考記事、書籍を提示する</p></li>
+</ul>
+</div>
+<div class="section" id="id28">
+<h2>レビュー観点<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
+<p>対応のレベルのイメージ</p>
+<p>MUST</p>
+<ul class="simple">
+<li><p>要件を満たしていない</p></li>
+<li><p>クリティカルなバグがある</p></li>
+</ul>
+<p>SHOULD</p>
+<ul class="simple">
+<li><p>仕事では最終的にこれができるようになってほしい</p></li>
+<li><p>処理効率が悪すぎる</p></li>
+</ul>
+<p>MAY</p>
+<ul class="simple">
+<li><p>どっちでもいいけどBPは（俺は）こっちが好き</p></li>
+<li><p>こっちの変数名の方がわかりやすい</p></li>
+</ul>
+<p>以下のURLも参考になります。</p>
+<p>参考: <a class="reference external" href="https://gist.github.com/taichi/b36c135001c161aeb1b240327ed044d6">コードレビューの基本</a></p>
+</div>
+<div class="section" id="id30">
+<h2>まとめ<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>BPでは経験が浅い人もスムーズに開発プロジェクトに参加できるように、Rookiesという取り組みをしている</p></li>
+<li><p>意外につまづくポイントや、指摘されるポイントというのは共通点があって面白い</p></li>
+<li><p>それなり取り組みが機能しているが、Rookiesだけでは全てを学んだり、伝えたりするのが難しい</p></li>
+<li><p>そういったことを踏まえて次の一歩として、自走プログラマーを書いたので、興味がある方は是非読んでみてください。</p></li>
+</ul>
+</div>
+<div class="section" id="id31">
+<h2>謝辞<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>いつも忙しい中、Rookiesを手伝ってくれてる同僚の皆さんありがとうございます。</p></li>
+</ul>
+</div>
+<div class="section" id="id32">
+<h2>ご静聴ありがとうありがとうございました<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+  </body>
+  <div id="help">
+      Use the left and right arrow keys or click the left and right
+      edges of the page to navigate between slides.<br>
+      (Press 'H' or navigate to hide this message.)
+  </div>
+  <script type="text/javascript" src="_static/js/init.js"></script>
+  <script type="text/javascript" src="_static/js/notes.js"></script>
+  <script type="text/javascript" src="_static/js/slides.js"></script>
+</html>
